@@ -7,7 +7,6 @@ parameters:
 -   id: N
     label: vector length
     dtype: int
-    hide: ${ 'part' if vlen == 1 else 'none' }
 -   id: Nensayos
     label: Number of trials
     dtype: int
