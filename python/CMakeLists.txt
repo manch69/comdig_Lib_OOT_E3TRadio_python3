@@ -32,7 +32,6 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-<<<<<<< HEAD
     amplificador_ff.py
     sumador.py
         tool_borrado.py
@@ -68,7 +67,6 @@ GR_PYTHON_INSTALL(
 	qa_ifft_jesus.py
 	acumulador_truncado_ff.py
 	diezmador_cc.py
-	build_utils_codes.py
 	qa_decisor_fb.py
 	qa_ej_amplificador_ff2.py
 	retrazo_cc.py
@@ -82,8 +80,6 @@ GR_PYTHON_INSTALL(
 	e_canal_BER.py
 	diezmoppenh3_ff.py
 	qa_amplificador_ff.py
-	sumador2.py
-	build_utils.py
 	qa_decisor_fi.py
 	qa_e_BERtool.py
 	FFT_SDRCol_triangular.py
@@ -96,8 +92,7 @@ GR_PYTHON_INSTALL(
 	qa_e_canal_BER.py
 	vec_diagrama_ojo2_f.py
 	ifft_jesus.py 
-=======
->>>>>>> 3211103fc8192c37cfa5a8f54249993ce93a9020
+
     DESTINATION ${GR_PYTHON_DIR}/E3TRadio
 )
 
