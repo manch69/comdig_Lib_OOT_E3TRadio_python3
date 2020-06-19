@@ -17,3 +17,9 @@ cmake ..
 make
 sudo make install
 sudo ldconfig
+
+Hay un problema con las configuraciones del path hasta solucionar este bug es necesario ejecutar:
+
+sudo cp -r /usr/local/lib/python3/dist-packages/E3TRadio /usr/local/lib/python3.8/dist-packages/
+
+La libreria se esta guardando en python 3.0 pero se tiene instalado python 3.8

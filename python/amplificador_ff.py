@@ -7,7 +7,7 @@ from gnuradio import gr
 
 class amplificador_ff(gr.sync_block):
     """
-   Actua como un amplificador. Para ello la funcion work() toma cada valor de entrada y lo multiplica
+    actua como un amplificador. Para ello la funcion work() toma cada valor de entrada y lo multiplica
 por el coeficiente que tiene previamente preconfigurado el bloque. Ese coeficiente puede ser cambiado aun
 despues de haber sido preconfigurado el bloque, gracias al callback representado en la funcion
 set_ka
