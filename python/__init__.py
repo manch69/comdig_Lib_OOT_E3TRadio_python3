@@ -19,19 +19,20 @@
 # The presence of this file turns this directory into a Python package
 
 '''
-This is the GNU Radio E3TRADIO_PRUEBA module. Place your Python package
+This is the GNU Radio E3TRADIO module. Place your Python package
 description here (python/__init__.py).
 '''
 from __future__ import unicode_literals
 
-# import swig generated symbols into the E3TRadio_prueba namespace
+# import swig generated symbols into the E3TRadio namespace
 try:
     # this might fail if the module is python-only
-    from .E3TRadio_prueba_swig import *
+    from .E3TRadio_swig import *
 except ImportError:
     pass
 
 # import any pure python here
+#
 from .sumador import sumador
 from .sum_vectors_ff import sum_vectors_ff
 from .amplificador_ff import amplificador_ff
@@ -63,3 +64,19 @@ from .v_delay import v_delay
 
 from .diezmoppenh3_ff import diezmoppenh3_ff
 from .diezma_ff import diezma_ff
+
+
+
+
+from .zero_order_hold2_cc import zero_order_hold2_cc
+from .zero_order_hold_bb import zero_order_hold_bb
+from .ifft_jesus import ifft_jesus
+from .retrazo_ff import retrazo_ff
+from .retrazo_cc import retrazo_cc
+
+from .e_canal_BER import e_canal_BER
+from .e_BERtool import e_BERtool
+from .mean_meter import mean_meter
+from .power_meter import power_meter
+from .vec_diagrama_ojo2_f import vec_diagrama_ojo2_f
+from .vec_diagrama_ojo_f import vec_diagrama_ojo_f

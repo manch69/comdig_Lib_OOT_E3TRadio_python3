@@ -10,7 +10,6 @@ parameters:
 -   id: N
     label: N
     dtype: int
-    hide: ${ 'part' if vlen == 1 else 'none' }
 -   id: samp_rate
     label: samp_rate
     dtype: float
