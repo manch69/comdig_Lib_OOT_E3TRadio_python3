@@ -40,6 +40,8 @@ if __name__ == "__main__":
 		help="Compile all files .py in folder")
 	parser.add_option("-d","--delcom",action="store_true", default=False,
 		help="delete all comment files in yml in folder")
+	parser.add_option("-p","--pylist",action="store_true", default=False,
+		help="delete all comment files in yml in folder")
 	(options, args) = parser.parse_args()
 
 	if options.all:
@@ -53,6 +55,12 @@ if __name__ == "__main__":
 		for file in glob.glob("*.yml"):
 			if options.verbose: print("Delete on "+file)
 			delete_comment(file)
+			#os.system(coma)
+	elif options.pylist:
+		import glob
+		for file in glob.glob("*.py"):
+			#if options.verbose: print("Delete on "+file)
+			print(file)
 			#os.system(coma)
 	else:
 		for x in args:

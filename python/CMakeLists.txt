@@ -33,7 +33,69 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     amplificador_ff.py
-    sumador.py DESTINATION ${GR_PYTHON_DIR}/E3TRadio_prueba
+    sumador.py
+        tool_borrado.py
+	max_xx.py
+	qa_retrazo_ff.py
+	decisor_fb.py
+	diezma_ff.py
+	qa_delay_hob_ff.py
+	Averager_onate.py
+	e_BERtool.py
+	python_compile_helper.py
+	retrazo_ff.py
+	sumador.py
+	delay_hob_ff.py
+	amplificador_ff.py
+	decisor_fi.py
+	averager.py
+	v_delay.py
+	Zero_Order_Hold.py
+	fft.py
+	qa_zero_order_hold_bb.py
+	qa_v_delay.py
+	qa_ej_amplificador_ff.py
+	mean_meter.py
+	unipolar_to_bipolar_ff.py
+	qa_acumulador_truncado_ff.py
+	qa_zero_order_hold2_cc.py
+	zero_order_hold2_cc.py
+	power_meter.py
+	vector_average_hob.py
+	qa_multiply_py_ff_hob.py
+	time_averager_jesus.py
+	qa_ifft_jesus.py
+	acumulador_truncado_ff.py
+	diezmador_cc.py
+	build_utils_codes.py
+	qa_decisor_fb.py
+	qa_ej_amplificador_ff2.py
+	retrazo_cc.py
+	sum_vectors_ff.py
+	multiply_py_ff_hob.py
+	decisor_ff.py
+	qa_diezma_ff.py
+	qa_retrazo_cc.py
+	qa_vector_average_hob.py
+	qa_decisor_ff.py
+	e_canal_BER.py
+	diezmoppenh3_ff.py
+	qa_amplificador_ff.py
+	sumador2.py
+	build_utils.py
+	qa_decisor_fi.py
+	qa_e_BERtool.py
+	FFT_SDRCol_triangular.py
+	rebackup_diezmoppenh3_ff.py
+	qa_diezmoppenh3_ff.py
+	zero_order_hold_bb.py
+	fft_jesus.py
+	ej_amplificador_ff.py
+	vec_diagrama_ojo_f.py
+	qa_e_canal_BER.py
+	vec_diagrama_ojo2_f.py
+	ifft_jesus.py 
+    DESTINATION ${GR_PYTHON_DIR}/E3TRadio
 )
 
 ########################################################################
@@ -41,6 +103,6 @@ GR_PYTHON_INSTALL(
 ########################################################################
 include(GrTest)
 
-set(GR_TEST_TARGET_DEPS gnuradio-E3TRadio_prueba)
+set(GR_TEST_TARGET_DEPS gnuradio-E3TRadio)
 set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
 GR_ADD_TEST(qa_amplificador_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_amplificador_ff.py)
